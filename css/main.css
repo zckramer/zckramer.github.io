@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+a:hover {
+    color: slategray
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    font: 20px/2 sans-serif;
+    font-family: 'Inconsolata', monospace;
+    background-image: url("/src/images/Subtle-Dots-White-Tileable-pattern.jpg");
+    background-size: contain;
+    margin: 0%;
+    padding: 0%;
+}
+
+.image-container {
+    width: 75rem;
+    height: 15rem;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+#intro__my-name {
+    display: flex;
+    font-style: bold;
+    font-weight: bolder;
+}
+
+.intro__three-words {
+    display: flex;
+    justify-self: center;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main {
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+#main__intro {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.nav-area {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-height: 2rem;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.nav-element {
+    font-size: 88%;
+    font-size-adjust: inherit;
+}
+
+.project-description {
+    margin: .5rem;
+}
+
+.slider-button {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    border: 2px black solid;
+}
+
+.slider-button-container {
+    top: -2rem;
+    position: relative;
+}
+
+.slider-container {
+    width: 25rem;
+    height: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slider-image {
+    width: 25rem;
+    height: 15rem;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#slider-image01:target ~ .image-container{
+    left: 0rem;
+}
+#slider-image02:target ~ .image-container{
+    left: -25rem;
+}
+#slider-image03:target ~ .image-container{
+    left: -50rem;
+}
+
+
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    max-width: 30rem;
+    width: 90%;
+    grid-template-rows: 5rem auto 5rem;
+    max-width: 30rem;
+    min-height: 99vh;
+
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+*/ 
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+  
+}

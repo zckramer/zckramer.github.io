@@ -1,0 +1,28 @@
+{
+  "name": "portfolio2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.41.5",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot --port 3000",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zckramer/portfolio-2019.git"
+  },
+  "author": "Zachary Kramer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zckramer/portfolio-2019/issues"
+  },
+  "homepage": "https://github.com/zckramer/portfolio-2019#readme"
+}

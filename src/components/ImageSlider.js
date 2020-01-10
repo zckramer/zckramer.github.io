@@ -1,0 +1,52 @@
+const Deact = require('../../libs/deact')
+// const fs = require('fs')
+// const path = require('path')
+
+function ImageSlider (idName, img1, img2, img3) {
+    const slider = Deact.create("div", {class: "slider-container"}, [
+        Deact.create("span", {id: `${idName}1`}, ""),
+        Deact.create("span", {id: `${idName}2`}, ""), 
+        Deact.create("span", {id: `${idName}3`}, ""),
+        Deact.create("div", {class: "image-container"}, [
+            Deact.create("img", {class: "slider-image", src: `${img1}`}, ""),
+            Deact.create("img", {class: "slider-image", src: `${img2}`}, ""),
+            Deact.create("img", {class: "slider-image", src: `${img3}`}, "")
+            
+        ]),
+
+        Deact.create("div", {class: "slider-button-container"}, sliderButtons(`#${idName}1`, `#${idName}2`, `#${idName}3`))
+
+    ])
+        
+    return slider
+        
+}
+
+function sliderButtons (targetId1, targetId2, targetId3) {
+    const buttons = [
+        Deact.create("a", {class: "slider-button", href: `${targetId1}`}, ""),
+        Deact.create("a", {class: "slider-button", href: `${targetId2}`}, ""),
+        Deact.create("a", {class: "slider-button", href: `${targetId3}`}, "")
+    ]
+    return buttons
+}
+
+// function checkFolderForFiles (folderPath) {
+
+    // let returnedFiles
+
+    // fs.readdir(folderPath, function (err, files){
+    //     if(err){
+    //         console.error("Could not list the directory.", err)
+    //         // process.exit(1)
+    //     }
+    //     files.map(function (file) {
+    //         returnedFiles.push(file)
+    //     })
+    // }) 
+    
+    // return returnedFiles
+    
+// }
+
+module.exports = ImageSlider
