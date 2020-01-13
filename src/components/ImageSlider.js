@@ -1,6 +1,4 @@
 const Deact = require('../../libs/deact')
-// const fs = require('fs')
-// const path = require('path')
 
 function ImageSlider (idName, img1, img2, img3) {
     const slider = Deact.create("div", {class: "slider-container"}, [
