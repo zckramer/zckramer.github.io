@@ -2,17 +2,17 @@ const Deact = require("../../../libs/deact")
 const TextContent = require("../TextContent")
 const ImageSlider = require('../ImageSlider')
 const BaseURL = require('../../index')
-const imageURL = BaseURL + "src/images/"
+const imageURL = BaseURL() + "src/images/"
 
 function BringIt () {
     const bringIt = 
         Deact.create("article", {class: "project-description"}, [
             TextContent.ProjectBringIt01(),
             Deact.create("section", {class: "project-description__images"},
-                    ImageSlider(`${imageURL}slider-image0`, 
-                                `${imageURL}BringItScreen01.png`, 
-                                `${imageURL}BringItScreen02.png`, 
-                                `${imageURL}BringItScreen03.png`)
+                    ImageSlider(imageURL + `slider-image0`, 
+                                imageURL + `BringItScreen01.png`, 
+                                imageURL + `BringItScreen02.png`, 
+                                imageURL + `BringItScreen03.png`)
                             )   
                         
         ])    
