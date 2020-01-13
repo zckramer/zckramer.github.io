@@ -1,4 +1,6 @@
 const Deact = require('../../libs/deact')
+const BaseURL = "https://zckramer.github.io/src/images/"
+
 
 function ImageSlider (idName, img1, img2, img3) {
     const slider = Deact.create("div", {class: "slider-container"}, [
@@ -6,9 +8,9 @@ function ImageSlider (idName, img1, img2, img3) {
         Deact.create("span", {id: `${idName}2`}, ""), 
         Deact.create("span", {id: `${idName}3`}, ""),
         Deact.create("div", {class: "image-container"}, [
-            Deact.create("img", {class: "slider-image", src: img1}, ""),
-            Deact.create("img", {class: "slider-image", src: img2}, ""),
-            Deact.create("img", {class: "slider-image", src: img3}, "")
+            Deact.create("img", {class: "slider-image", src: BaseURL + img1}, ""),
+            Deact.create("img", {class: "slider-image", src: BaseURL + img2}, ""),
+            Deact.create("img", {class: "slider-image", src: BaseURL + img3}, "")
             
         ]),
 
