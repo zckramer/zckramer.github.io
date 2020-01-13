@@ -2,7 +2,7 @@ const Deact = require("../../../libs/deact")
 const TextContent = require("../TextContent")
 const ImageSlider = require('../ImageSlider')
 const BaseURL = require('../../index')
-const imageURL = BaseURL() + "src/images/"
+const imageURL = BaseURL + "src/images/"
 
 function BringIt () {
     const bringIt = 
