@@ -25,11 +25,13 @@ function ImageSlider (idName, img1, img2, img3, img4) {
         
 }
 
-function sliderButtons (targetId1, targetId2, targetId3) {
+function sliderButtons (targetId1, targetId2, targetId3, targetId4) {
     const buttons = [
         Deact.create("a", {class: "slider-button", href: `${targetId1}`}, ""),
         Deact.create("a", {class: "slider-button", href: `${targetId2}`}, ""),
-        Deact.create("a", {class: "slider-button", href: `${targetId3}`}, "")
+        Deact.create("a", {class: "slider-button", href: `${targetId3}`}, ""),
+        Deact.create("a", {class: "slider-button", href: `${targetId4}`}, "")
+
     ]
     return buttons
 }
