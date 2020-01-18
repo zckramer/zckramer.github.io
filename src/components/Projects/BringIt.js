@@ -19,17 +19,4 @@ function BringIt () {
     
 }
 
-// ImageSlider (idName, img1, img2, img3)
-function BringItScreenshotsArray () {
-    const screens = [
-        Deact.create("img", {class: "project-description__image", id: "project-description__image01", src: "../src/images/BringItScreen01.png"}, ""),
-        Deact.create("img", {class: "project-description__image", id: "project-description__image02", src: "../src/images/BringItScreen02.png"}, ""),
-        Deact.create("img", {class: "project-description__image", id: "project-description__image03", src: "../src/images/BringItScreen03.png"}, ""),
-    ]
-    return screens
-}
-
-
-
-
 module.exports = BringIt

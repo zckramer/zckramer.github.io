@@ -1,8 +1,20 @@
 const Deact = require("../../../libs/deact")
 const TextContent = require("../TextContent")
+const ImageSlider = require('../ImageSlider')
 
-function BringIt () {
-    return Deact.create("article", {class: "project-description"}, `${TextContent.ProjectPenguinRush01()}`)
+function PenguinRush () {
+    const penguinRush = Deact.create("article", {class: "project-description"}, [
+        TextContent.ProjectPenguinRush01(),
+        Deact.create("section", {class: "project-description__images"},
+            ImageSlider(`slider-image0`,
+                        'PenguinRush_Screenshot_01.jpg',
+                        'PenguinRush_Screenshot_02.jpg',
+                        'PenguinRush_Screenshot_03.jpg',
+                        'PenguinRush_Screenshot_04.png')
+                        )
+    ])
+
+    return penguinRush
 }
 
-module.exports = BringIt
+module.exports = PenguinRush
