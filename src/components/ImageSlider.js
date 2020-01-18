@@ -17,7 +17,7 @@ function ImageSlider (idName, img1, img2, img3, img4) {
             
         ]),
 
-        Deact.create("div", {class: "slider-button-container"}, sliderButtons(`#${idName}1`, `#${idName}2`, `#${idName}3`))
+        Deact.create("div", {class: "slider-button-container"}, sliderButtons(`#${idName}1`, `#${idName}2`, `#${idName}3`, `#${idName}4`))
 
     ])
         
