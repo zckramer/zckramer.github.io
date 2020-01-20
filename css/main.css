@@ -13,6 +13,14 @@ a {
     color: black;
 }
 
+.contact-me__email {
+    -webkit-user-select: all ; /* Safari 3.1+ */
+    -moz-user-select: -moz-all; /* Firefox 2+*/ 
+    -ms-user-select: all; /* IE 10+ */
+    user-select: all; /* Standard syntax */
+
+}
+
 html {
     font: 20px/2 sans-serif;
     font-family: 'Inconsolata', monospace;
