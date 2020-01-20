@@ -28,6 +28,10 @@ module.exports = {
     ProjectPenguinRush01 () {
         return `Penguin Rush is an infinite runner arcade style game that was a collaboration between myself and 
         four others during my time at Full Sail University. It is a capstone project for the Video Game Design 
-        program. Screenshots and more on this project coming soon...! Find the code in my GitHub!`
+        program. Penguin Rush is made in Unity, C#. My biggest point of pride in this project is the system that
+        creates patterns you see as you progress through the game. It is an eight-point game object with a central
+        point that spins in specified directions. We got together and I got to teach my teammates how to create patterns
+        using the system. If you're interested in looking at the code, find it in the GitHub repository! The link is in 
+        the "contact-me" section.`
     }
 }
