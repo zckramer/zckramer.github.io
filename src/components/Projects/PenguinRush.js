@@ -9,8 +9,7 @@ function PenguinRush () {
             ImageSlider(`slider-image0`,
                         'PenguinRush_Screenshot_01.jpg',
                         'PenguinRush_Screenshot_02.jpg',
-                        'PenguinRush_Screenshot_03.jpg',
-                        'PenguinRush_Screenshot_04.png')
+                        'PenguinRush_Screenshot_03.jpg')
                         )
     ])
 
