@@ -123,6 +123,9 @@ ul {
 #slider-image03:target ~ .image-container{
     left: -50rem;
 }
+#slider-image04:target ~ .image-container{
+    left: -75rem;
+}
 
 
 .wrapper {
