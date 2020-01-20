@@ -7,7 +7,7 @@ function PenguinRush () {
         TextContent.ProjectPenguinRush01(),
         Deact.create("section", {class: "project-description__images"},
             ImageSlider(`slider-image0`,
-                        'PenguinRush_Screenshot_01.jpg',
+                        'PenguinRush_Screenshot_01.png',
                         'PenguinRush_Screenshot_02.jpg',
                         'PenguinRush_Screenshot_03.jpg')
                         )
