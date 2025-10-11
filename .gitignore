@@ -1,0 +1,33 @@
+// boilerplate:ignore-file
+# Ignore node_modules
+node_modules/
+# Ignore build output
+dist/
+build/
+# Ignore environment variables file
+.env
+# Ignore logs
+logs/
+*.log
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Ignore coverage directory
+coverage/
+# Ignore temporary files
+*.tmp
+*.temp
+# Ignore package lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+# Ignore test output
+test-output/
